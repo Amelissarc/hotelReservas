@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Css -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Hotel Reservas</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../assents/hotel-icono.svg" alt="hotel-icono" width="60" height="34">
+                </a>
+              <a class="navbar-brand" href="#">Nombre Hotel</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/booking.html">Bookings</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/contact.html">Contact</a>
+                  </li>
+                </ul>
+                <span class="navbar-login">
+                    <a href="#">
+                        <i class="fa-solid fa-circle-user"></i>
+                        <p>Inicio de sección</p>
+                    </a>
+                </span>
+              </div>
+            </div>
+          </nav>  
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="reserves-over contact">
+                <form class="form-reserves contact">
+                  <!-- column-form -->
+                  <div class="column-form contact">
+                    <div class="input-group">
+                        <span class="input-group-text">First and last name</span>
+                        <input type="text" aria-label="First name" class="form-control">
+                        <input type="text" aria-label="Last name" class="form-control">
+                      </div>
+                    <div class="col-12 form-floating">
+                      <label class="visually-hidden" for="checkIn">Preference</label>
+                      <input class="form-select" type="date" id="checkIn" name="checkIn" placeholder="Check In">
+                      <label for="checkIn">Check In</label>
+                    </div>
+                    <div class="col-12 form-floating">
+                      <label class="visually-hidden" for="checkOut">Preference</label>
+                      <input class="form-select" type="date" id="checkOut" name="checkOut" placeholder="Check Out">
+                      <label for="checkOut">Check Out</label>
+                    </div>
+                    <div class="row contact">
+                        <div class="col-md">
+                          <div class="form-floating">
+                            <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="mdo@example.com">
+                            <label for="floatingInputGrid">Email address</label>
+                          </div>
+                        </div>
+                        <div class="col-md">
+                          <div class="form-floating">
+                            <select class="form-select" id="type">
+                              <option selected>Room type </option>
+                              <option value="1">Hotel</option>
+                              <option value="2">Cabaña</option>
+                              <option value="3">Camping</option>
+                            </select>
+                            <label for="type">Select</label>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                  
+                  <!-- row-form -->
+                  <div class="row-form contact">
+                    <div class="col-12 form-floating">
+                      <label class="visually-hidden" for="adults">Preference</label>
+                      <select class="form-select" aria-label="adults">
+                        <option selected>Adults</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                      <label for="adults">Adults</label>
+                    </div>
+                    <div class="col-12 form-floating">
+                      <label class="visually-hidden" for="children">Preference</label>
+                      <select class="form-select" aria-label="children">
+                        <option selected>Children</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                      <label for="children">Children</label>
+                    </div>
+                  </div>
+                  <div class="form-floating">
+                    <textarea class="form-control comments" placeholder="Leave a comment here" id="floatingTextarea2"></textarea>
+                    <label for="floatingTextarea2">Comments</label>
+                  </div>
+                  <!-- Submit -->
+                  <div class="btn-submit column-form">
+                    <button type="submit" class="button" id="button">Reservar</button>
+                  </div>
+                </form>
+              </div>
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+    <!-- CDN Sweetalert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/e915ed1876.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html>
